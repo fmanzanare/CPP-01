@@ -6,7 +6,7 @@
 #    By: fmanzana <fmanzana@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/27 17:41:49 by fmanzana          #+#    #+#              #
-#    Updated: 2023/06/27 18:45:01 by fmanzana         ###   ########.fr        #
+#    Updated: 2023/06/27 19:00:37 by fmanzana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,4 +40,4 @@ fclean:		clean
 
 re:			fclean all
 
-.PHONY: all, clean, fclean, all
+.PHONY: all, clean, fclean, re
