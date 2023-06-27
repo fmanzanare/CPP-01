@@ -6,7 +6,7 @@
 /*   By: fmanzana <fmanzana@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 17:00:26 by fmanzana          #+#    #+#             */
-/*   Updated: 2023/06/27 17:33:45 by fmanzana         ###   ########.fr       */
+/*   Updated: 2023/06/27 17:40:06 by fmanzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,10 @@ int	main(void) {
 	std::cout << "Zombie created and announced with randomChump(name)\n";
 	randomChump(name);
 
+	std::cout << std::endl;
+
+	std::cout << "Insert the zombie name: ";
+	name = getInput();
 	std::cout << "Zombie created and announced with newZombie(name)\n";
 	Zombie	*heap_zombie = newZombie(name);
 	heap_zombie->announce();
