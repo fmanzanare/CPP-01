@@ -6,7 +6,7 @@
 #    By: fmanzana <fmanzana@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/27 16:43:59 by fmanzana          #+#    #+#              #
-#    Updated: 2023/06/27 16:48:22 by fmanzana         ###   ########.fr        #
+#    Updated: 2023/06/28 19:13:09 by fmanzana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,16 +21,16 @@ SRCS =	Zombie.cpp\
 		randomChump.cpp\
 		main.cpp\
 
-OBJS = $(addsuffix .o, $(notdir $(basename $(SRCS))))
+OBJS = $(SRCS:.cpp=.o)
 
 all:	$(NAME)
-
-$(OBJS):	$(SRCS)
-	@$(CC) $(CFLAGS) -c $(SRCS)
 
 $(NAME):	$(OBJS)
 	@$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 	@echo "Brainzzzz compiled!"
+
+%.o:	%.cpp
+	@$(CC) $(CFLAGS) -c $<
 
 clean:
 	@rm -f $(OBJS)
