@@ -6,7 +6,7 @@
 /*   By: fmanzana <fmanzana@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 17:00:26 by fmanzana          #+#    #+#             */
-/*   Updated: 2023/06/27 17:40:06 by fmanzana         ###   ########.fr       */
+/*   Updated: 2023/06/29 11:26:37 by fmanzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,18 @@
 
 std::string getInput(void)
 {
-	std::string input = "";
+	std::string c_input = "";
 
 	do {
-		std::getline(std::cin, input);
-		if (input.length() == 0)
+		if (!std::getline(std::cin, c_input))
+		{
+			std::cout << "\n";
+			exit(0);
+		}
+		if (c_input.length() == 0)
 			std::cout << "Error: You must enter a value: ";
-	} while (input.length() == 0);
-	return (input);
+	} while (c_input.length() == 0);
+	return (c_input);
 }
 
 int	main(void) {
