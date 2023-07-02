@@ -6,7 +6,7 @@
 /*   By: fmanzana <fmanzana@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 19:39:37 by fmanzana          #+#    #+#             */
-/*   Updated: 2023/06/28 19:57:00 by fmanzana         ###   ########.fr       */
+/*   Updated: 2023/07/02 15:05:02 by fmanzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #define HUMANA_HPP
 
 #include "Weapon.hpp"
-#include <iostream>
 
 class HumanA {
 	private:

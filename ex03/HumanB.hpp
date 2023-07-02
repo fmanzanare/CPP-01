@@ -6,11 +6,10 @@
 /*   By: fmanzana <fmanzana@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 19:45:59 by fmanzana          #+#    #+#             */
-/*   Updated: 2023/06/28 19:59:07 by fmanzana         ###   ########.fr       */
+/*   Updated: 2023/07/02 15:04:58 by fmanzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "Weapon.hpp"
 
 class HumanB
