@@ -6,12 +6,11 @@
 /*   By: fmanzana <fmanzana@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 17:00:26 by fmanzana          #+#    #+#             */
-/*   Updated: 2023/06/29 11:26:37 by fmanzana         ###   ########.fr       */
+/*   Updated: 2023/07/02 15:03:29 by fmanzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
-#include <iostream>
 
 std::string getInput(void)
 {
